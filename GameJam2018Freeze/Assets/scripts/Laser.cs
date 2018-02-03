@@ -71,4 +71,8 @@ public class Laser : MonoBehaviour {
 
 	}
 
+	bool isLaserOn(){
+		return laserOn;
+	}
+
 }

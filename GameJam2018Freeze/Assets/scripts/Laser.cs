@@ -81,7 +81,6 @@ public class Laser : MonoBehaviour {
 
 			GameObject canvas = GameObject.Find ("gameOverCanvas");
 			canvas.SetActive (true);
-
 		}
 	}
 }

@@ -75,4 +75,13 @@ public class Laser : MonoBehaviour {
 		return laserOn;
 	}
 
+	void OnTriggerEnter2D(Collider2D col){
+
+		if(col.gameObject.tag == "Player" && isLaserOn()){
+
+			GameObject canvas = GameObject.Find ("gameOverCanvas");
+			canvas.SetActive (true);
+
+		}
+	}
 }

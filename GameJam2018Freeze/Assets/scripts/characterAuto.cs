@@ -15,7 +15,7 @@ public class characterAuto : MonoBehaviour {
 
 		if (Input.touchCount>0) {
 		} else {
-			character.transform.Translate(Vector2.right * 7.5f);
+			character.transform.Translate(Vector2.right * 4.5f);
 		}
 
 	}

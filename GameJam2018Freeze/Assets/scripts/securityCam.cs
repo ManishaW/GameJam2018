@@ -5,6 +5,7 @@ using UnityEngine;
 public class securityCam : MonoBehaviour {
 	public GameObject character;
 	public GameObject securityOverlay;
+	public GameObject canvas;
 	// Use this for initialization
 	void Start () {
 		
@@ -24,6 +25,7 @@ public class securityCam : MonoBehaviour {
 		} else {
 			//game over
 			Debug.Log("Game over");
+			canvas.SetActive (true);
 		}
 
 
@@ -37,6 +39,7 @@ public class securityCam : MonoBehaviour {
 		} else {
 			//game over
 			Debug.Log("Game over");
+			canvas.SetActive (true);
 		}
 	}
 

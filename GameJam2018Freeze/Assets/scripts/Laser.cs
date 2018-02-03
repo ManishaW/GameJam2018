@@ -11,10 +11,11 @@ public class Laser : MonoBehaviour {
 	LineRenderer laser;
 
 	private float counter;
-	public float distance;
+	private float distance;
 
 	public float lineSpeed = 4f;
 	float laserTime = 8f;
+	public GameObject canvas;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +27,7 @@ public class Laser : MonoBehaviour {
 	void Update () { 
 
 		laserTime = laserTime - Time.deltaTime;
-		Debug.Log (laserTime);
+		//Debug.Log (laserTime);
 
 		if ((!laserOn && laserTime <= 0f) || firstLaser) {
 
@@ -76,11 +77,13 @@ public class Laser : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
+		Debug.Log ("HIo");
 
 		if(col.gameObject.tag == "Player" && isLaserOn()){
 
-			GameObject canvas = GameObject.Find ("gameOverCanvas");
-			canvas.SetActive (true);
+			//GameObject canvas = GameObject.Find ("gameOverCanvas");
+			canvas.gameObject.SetActive(true);
+			Debug.Log ("HI");
 		}
 	}
 }

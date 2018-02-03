@@ -5,8 +5,13 @@ using UnityEngine;
 public class characterAuto : MonoBehaviour {
 	public GameObject character;
 	Vector3 old_pos;
+
+	private Animator burglarAnim;
+
 	// Use this for initialization
 	void Start () {	
+
+		burglarAnim = gameObject.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -14,8 +19,11 @@ public class characterAuto : MonoBehaviour {
 		
 
 		if (Input.touchCount>0) {
+			burglarAnim.SetBool ("walking", false);
+
 		} else {
 			character.transform.Translate(Vector2.right * 7.5f);
+			burglarAnim.SetBool ("walking", true);
 		}
 
 	}

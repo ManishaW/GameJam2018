@@ -13,7 +13,7 @@ public class cameraScroll : MonoBehaviour {
 	void Update () {
 		if ((Input.touchCount>0)) {
 		} else {
-			float step = 4;
+			float step = 7;
 
 			var cameraPosition = Camera.main.gameObject.transform.position;
 			cameraPosition.x += step;

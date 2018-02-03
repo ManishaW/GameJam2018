@@ -22,7 +22,7 @@ public class characterAuto : MonoBehaviour {
 			burglarAnim.SetBool ("walking", false);
 
 		} else {
-			character.transform.Translate(Vector2.right * 4.5f);
+			character.transform.Translate(Vector2.right * 7f);
 		}
 
 	}

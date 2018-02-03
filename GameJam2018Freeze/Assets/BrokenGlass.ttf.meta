@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 26b2990ffb6c2474ebab735676d6a02a
+timeCreated: 1517700035
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Broken Glass
+  fontNames:
+  - Broken Glass
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

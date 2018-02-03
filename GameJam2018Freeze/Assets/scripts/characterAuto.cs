@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class characterAuto : MonoBehaviour {
 	public GameObject character;
+	Vector3 old_pos;
 	// Use this for initialization
 	void Start () {	
 	}
@@ -14,7 +15,8 @@ public class characterAuto : MonoBehaviour {
 
 		if (Input.touchCount>0) {
 		} else {
-			character.transform.Translate(Vector2.right * 7.25f);
+			character.transform.Translate(Vector2.right * 7.5f);
 		}
+
 	}
 }

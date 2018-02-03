@@ -83,7 +83,7 @@ public class Laser : MonoBehaviour {
 
 			//GameObject canvas = GameObject.Find ("gameOverCanvas");
 			canvas.gameObject.SetActive(true);
-			Debug.Log ("HI");
+			Time.timeScale = 0;
 		}
 	}
 }

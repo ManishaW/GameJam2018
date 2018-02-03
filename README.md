@@ -1,6 +1,6 @@
 # GameJam2018
 
-Only 8 hours...?
+Build a game with the theme of freezing in 6 hours...? No pressure
 
 Sherry
 Manisha

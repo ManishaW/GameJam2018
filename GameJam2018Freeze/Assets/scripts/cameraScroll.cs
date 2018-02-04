@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class cameraScroll : MonoBehaviour {
 
+	bool cameraGoing = true;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,7 +13,7 @@ public class cameraScroll : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ((Input.touchCount>0)) {
+		if ((Input.touchCount>0) || !cameraGoing) {
 		} else {
 			float step = 7;
 
@@ -22,5 +24,7 @@ public class cameraScroll : MonoBehaviour {
 
 		}
 
-
+	public void scrollCamera(bool s){
+		cameraGoing = s;
+	}
 }

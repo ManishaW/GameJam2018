@@ -15,7 +15,7 @@ public class Laser : MonoBehaviour {
 
 	public float lineSpeed = 4f;
 	float laserTime = 8f;
-	public GameObject canvas;
+	public GameObject gameOverCanvas;
 
 	// Use this for initialization
 	void Start () {
@@ -82,8 +82,13 @@ public class Laser : MonoBehaviour {
 		if(col.gameObject.tag == "Player" && isLaserOn()){
 
 			//GameObject canvas = GameObject.Find ("gameOverCanvas");
-			canvas.gameObject.SetActive(true);
+			gameOverCanvas.gameObject.SetActive(true);
 			Time.timeScale = 0;
+
+			GameObject mainCamera = GameObject.Find("Main Camera");
+			cameraScroll camera = mainCamera.GetComponent<cameraScroll>();
+			camera.scrollCamera(false);
+
 		}
 	}
 }
